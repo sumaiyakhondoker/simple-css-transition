@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Effect</title>
+    <style>
+
+        /* @keyframes ping-pong{
+            from{
+                left: 0px;
+
+            }
+            to{
+                left: 400px;
+                background-color: red;
+            }
+        } */
+
+            @keyframes bounce {
+                0%{
+                    
+                    top: 0px;
+                    left: 0px;
+                }
+                25%{
+                    top: 200px;
+                    left: 150px;
+                    background-color: red;
+                }
+                50%{
+                    top: 0px;
+                    left: 300px;
+                    background-color: blueviolet;
+                }
+                100%{
+                    top: 200px;
+                    left: 450px;
+                    background-color: orange;
+                }
+            }
+
+        .stage{
+            height: 300px;
+            width: 550px;
+            border: 2px solid steelblue;
+            background-color: aqua;
+        }
+
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            /* animation: ping-pong 2s ease-in-out 1s 3 alternate; */
+            animation: bounce 2s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
